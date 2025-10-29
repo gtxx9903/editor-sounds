@@ -51,7 +51,7 @@ class $modify(MyEditorUI, EditorUI) {
         if (exists) {
             m_fields->m_existingSounds[path] = true;
 
-            FMODAudioEngine::sharedEngine()->m_backgroundMusicFade->setPaused(false);
+            FMODAudioEngine::sharedEngine()->m_reverbChannel->setPaused(false);
             FMODAudioEngine::sharedEngine()->m_backgroundMusicChannel->setPaused(false);
             FMODAudioEngine::sharedEngine()->m_globalChannel->setPaused(false);
             FMODAudioEngine::sharedEngine()->m_system->update();
